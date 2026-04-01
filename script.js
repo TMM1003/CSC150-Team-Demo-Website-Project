@@ -332,74 +332,162 @@ const caseStudies = [
 ];
 
 const analysisInsights = [
-  { type: "Editable insight scaffold", title: "What consistently worked", body: "Use this card for evidence-backed patterns about composition, palette control, or prompt specificity." },
-  { type: "Editable insight scaffold", title: "What repeatedly failed", body: "Summarize recurring weak points such as unstable typography, drift, or inconsistent perspective." },
-  { type: "Editable insight scaffold", title: "Prompt patterns that improved results", body: "Document useful phrasing patterns such as camera angle, lighting, texture, and layout intent." },
-  { type: "Editable insight scaffold", title: "AI as collaborator vs. AI as tool", body: "Compare moments where AI felt surprising and generative versus moments where it behaved more like a drafting utility." }
+  {
+    type: "Proposal-aligned insight",
+    title: "Process transparency is the main value",
+    body: "The project was proposed as more than an AI image gallery. Its strongest idea is that each piece should show the original prompt, revisions, final output, and commentary so the process is visible to the audience."
+  },
+  {
+    type: "Proposal-aligned insight",
+    title: "Iteration is the real subject",
+    body: "The website is built around the belief that AI-assisted design improves through repeated prompt engineering and comparison, not through a single first-generation image."
+  },
+  {
+    type: "Proposal-aligned insight",
+    title: "Tool choice shapes the workflow",
+    body: "Gemini's Nano Banana Pro, ChatGPT, and ChatGPT Codex each support different parts of the project. Image generation, prompt development, and site building are treated as connected but distinct tasks."
+  },
+  {
+    type: "Proposal-aligned insight",
+    title: "Human judgment still drives curation",
+    body: "Even with AI supporting ideation and production, the team still decides which directions are strongest, which revisions matter, and how the work should be presented to viewers."
+  }
 ];
 
 const processStats = [
-  { value: "4", label: "Case studies scaffolded", note: "Add or remove case studies directly in script.js." },
-  { value: "16", label: "Iteration slots prepared", note: "Four cases with four core iteration images each." },
-  { value: "2", label: "Interactive process modules", note: "Slider and style switcher are already functional." },
-  { value: "100%", label: "Frontend-only deployment ready", note: "No backend, secrets, or build tooling required." }
+  { value: "5", label: "Student contributors", note: "Roles were defined in the initial proposal across management, prompting, generation, and development." },
+  { value: "4", label: "Case studies scaffolded", note: "The site is currently organized around four prompt-based case studies." },
+  { value: "3", label: "Core AI tools planned", note: "Gemini's Nano Banana Pro, ChatGPT, and ChatGPT Codex anchor the proposed workflow." },
+  { value: "16", label: "Iteration slots prepared", note: "Four cases with four core version frames each are ready for swap-in." }
 ];
 
 const workflowStages = [
-  { label: "Stage 1", title: "Concept framing", body: "Define the goal, audience, references, and what AI should help generate." },
-  { label: "Stage 2", title: "Prompt drafting", body: "Document first prompts, tool choice, and initial assumptions." },
-  { label: "Stage 3", title: "Iteration and comparison", body: "Track revisions, version changes, and tool tradeoffs." },
-  { label: "Stage 4", title: "Selection and reflection", body: "Summarize final picks, curation logic, and what the team learned." }
+  {
+    label: "Stage 1",
+    title: "Concept refinement",
+    body: "The team refined an earlier AI art gallery idea into a process-focused portfolio centered on transparency, audience clarity, and visible iteration."
+  },
+  {
+    label: "Stage 2",
+    title: "Prompt engineering",
+    body: "William Kiecka and John Cessario lead prompt development, shaping the original prompt set and the revisions that drive each case study forward."
+  },
+  {
+    label: "Stage 3",
+    title: "Image generation and comparison",
+    body: "Vincent Cutaia focuses on image generation, using planned tools such as Gemini's Nano Banana Pro and ChatGPT to produce outputs worth comparing and refining."
+  },
+  {
+    label: "Stage 4",
+    title: "Site assembly and coordination",
+    body: "Thomas Morrissey handles programming and site design while Mia Miceli supports project management, helping keep the build organized, coherent, and submission-ready."
+  }
 ];
 
 const toolsUsed = [
-  { label: "Tool placeholder", title: "Primary image generator", body: "Replace with the actual tool name and explain what it was best at." },
-  { label: "Tool placeholder", title: "Secondary variation tool", body: "Replace with the actual tool name and explain where it produced better alternatives." },
-  { label: "Support tool placeholder", title: "Editing or curation support", body: "Document any software used for cleanup, layout, or screenshot capture." },
-  { label: "Documentation placeholder", title: "Process capture method", body: "Explain how prompt records, screenshots, or folder naming stayed organized." }
+  {
+    label: "Image generation",
+    title: "Gemini's Nano Banana Pro",
+    body: "Planned as a primary image-generation tool for producing initial AI artwork and alternate visual directions during the case study process."
+  },
+  {
+    label: "Image generation",
+    title: "ChatGPT",
+    body: "Used as an additional AI platform for generating or refining visual concepts and supporting prompt experimentation across the project."
+  },
+  {
+    label: "Vibe coding",
+    title: "ChatGPT Codex",
+    body: "Used to help build the frontend website, organize content scaffolding, and speed up iterative implementation of the final portfolio experience."
+  },
+  {
+    label: "Documentation support",
+    title: "Prompt screenshots and structured asset folders",
+    body: "The process is reinforced through saved screenshots, labeled placeholder assets, and a folder structure that keeps prompts, outputs, and comparison evidence easy to track."
+  }
 ];
 
 const processArtifacts = [
   {
-    label: "Prompt evidence set A",
-    title: "Insert prompt screenshots here",
-    body: "Recommended path: assets/images/shared/prompt-shot-a-placeholder.jpg",
+    label: "Initial prompt evidence",
+    title: "Original prompt and early-generation capture",
+    body: "Use this slot for a screenshot showing the first prompt or earliest tool interface state. Recommended path: assets/images/shared/prompt-shot-a-placeholder.jpg",
     media: media("assets/images/shared/prompt-shot-a-placeholder.jpg", "Prompt evidence placeholder A", "Insert prompt screenshot here")
   },
   {
-    label: "Prompt evidence set B",
-    title: "Insert prompt screenshots here",
-    body: "Recommended path: assets/images/shared/prompt-shot-b-placeholder.jpg",
+    label: "Revision prompt evidence",
+    title: "Refined prompt and iteration capture",
+    body: "Use this slot for revised prompt wording, later tool settings, or a screenshot that shows how the team changed direction. Recommended path: assets/images/shared/prompt-shot-b-placeholder.jpg",
     media: media("assets/images/shared/prompt-shot-b-placeholder.jpg", "Prompt evidence placeholder B", "Insert prompt screenshot here")
   },
   {
-    label: "Workflow evidence set",
-    title: "Insert workflow or comparison screenshot here",
-    body: "Recommended path: assets/images/shared/workflow-board-placeholder.jpg",
+    label: "Workflow evidence",
+    title: "Proposal, planning, or comparison board",
+    body: "Use this slot for planning notes, folder organization, side-by-side version comparisons, or other process proof. Recommended path: assets/images/shared/workflow-board-placeholder.jpg",
     media: media("assets/images/shared/workflow-board-placeholder.jpg", "Workflow evidence placeholder", "Insert workflow screenshot here")
   },
   {
-    label: "Rationale evidence set",
-    title: "Insert tool rationale screenshot here",
-    body: "Recommended path: assets/images/shared/tool-rationale-placeholder.jpg",
+    label: "Tool rationale evidence",
+    title: "Model or tool choice support",
+    body: "Use this slot for screenshots that justify why a specific tool was chosen for generation, variation, or site production. Recommended path: assets/images/shared/tool-rationale-placeholder.jpg",
     media: media("assets/images/shared/tool-rationale-placeholder.jpg", "Tool rationale evidence placeholder", "Insert tool rationale screenshot here")
   }
 ];
 
 const contributionCards = [
-  { label: "Editable team role", title: "Research and references", body: "Add the teammate name, references gathered, and how that research influenced prompts." },
-  { label: "Editable team role", title: "Prompt engineering", body: "Add the teammate name, which prompts they developed, and what revisions improved results." },
-  { label: "Editable team role", title: "Selection and analysis", body: "Add the teammate name and the criteria they used to judge outputs." },
-  { label: "Editable team role", title: "Website assembly and QA", body: "Add the teammate name and their role in build polish, organization, and review." }
+  {
+    label: "Team role",
+    title: "Thomas Morrissey — Programmer and Site Designer",
+    body: "Responsible for building the website, shaping the visual presentation, and turning the project concept into a polished frontend submission."
+  },
+  {
+    label: "Team role",
+    title: "Mia Miceli — Project Manager",
+    body: "Supports planning, coordination, and overall progress so the concept, deliverables, and team responsibilities stay aligned."
+  },
+  {
+    label: "Team role",
+    title: "William Kiecka and John Cessario — Prompt Engineering",
+    body: "Focused on developing and refining prompts, comparing revisions, and improving the direction of AI-generated results through iteration."
+  },
+  {
+    label: "Team role",
+    title: "Vincent Cutaia — Image Generation",
+    body: "Leads image output creation, helping translate the prompt work into visual results that can be compared, selected, and documented."
+  }
 ];
 
 const reflectionCards = [
-  { type: "Reflection scaffold", title: "Team vision", body: "Summarize what the group hoped to demonstrate about AI-assisted creativity." },
-  { type: "Reflection scaffold", title: "AI strengths", body: "Note where AI accelerated ideation or revealed unexpected directions." },
-  { type: "Reflection scaffold", title: "AI weaknesses", body: "Capture recurring issues such as inconsistency, weak typography, or prompt sensitivity." },
-  { type: "Reflection scaffold", title: "Vibe coding takeaways", body: "Discuss what it felt like to build with fast iteration and AI-assisted experimentation." },
-  { type: "Reflection scaffold", title: "Team dynamics", body: "Describe how roles were shared and where collaboration helped the process." },
-  { type: "Reflection scaffold", title: "Closing insight", body: "Reserve this card for the final takeaway that ties together design, experimentation, and limitation." }
+  {
+    type: "Reflection scaffold",
+    title: "Team vision",
+    body: "The team's goal is to show AI-generated art with process transparency, making the original prompt, iteration path, final output, and commentary part of the presentation."
+  },
+  {
+    type: "Reflection scaffold",
+    title: "AI strengths",
+    body: "AI makes it easier to generate multiple directions quickly, explore alternative looks, and move from a rough concept to several viable visual options."
+  },
+  {
+    type: "Reflection scaffold",
+    title: "AI weaknesses",
+    body: "The project still depends on revision and judgment because first outputs are not always usable, and prompt wording can strongly affect clarity and consistency."
+  },
+  {
+    type: "Reflection scaffold",
+    title: "Vibe coding takeaways",
+    body: "Using ChatGPT Codex helped accelerate the site's implementation, but the final result still depended on human choices about layout, polish, wording, and QA."
+  },
+  {
+    type: "Reflection scaffold",
+    title: "Team dynamics",
+    body: "Clear role division across management, prompting, image generation, and programming helped the team cover both creative exploration and final delivery."
+  },
+  {
+    type: "Reflection scaffold",
+    title: "Closing insight",
+    body: "The project became stronger when it shifted from a simple gallery idea to a process-focused portfolio that treats iteration and reasoning as part of the final work."
+  }
 ];
 
 const interactiveLab = {

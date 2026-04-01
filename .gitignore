@@ -48,6 +48,7 @@ coverage.xml
 *.cover
 *.py.cover
 .hypothesis/
+DevelopmentProcess/
 .pytest_cache/
 cover/
 
@@ -214,4 +215,5 @@ Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
 
